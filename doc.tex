@@ -1,0 +1,135 @@
+% LTeX: language=es
+% !TEX program = xelatex
+% !TEX options = --shell-escape -synctex=1 -interaction=nonstopmode -file-line-error "%DOC%"
+
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{color}
+\usepackage{xcolor}
+
+\usepackage{enumerate}
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{changepage,threeparttable}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{minted}
+\usepackage{multicol}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\newcount\mycount
+
+%\graphicspath{{./}}
+
+%\theoremstyle{definition}
+%\newtheorem{definition}{Definici\'on}[section]
+%\newtheorem{proposition}[definition]{Proposici\'on}
+%\newtheorem{lemma}[definition]{Lema}
+%\newtheorem{theorem}[definition]{Teorema}
+%\newtheorem{corollary}[definition]{Corolario}
+%\newtheorem{example}[definition]{Ejemplo}
+%\newtheorem{observation}[definition]{Observaci\'on}
+%\newtheorem{problem}{Problema}
+%\newtheorem{question}[definition]{Pregunta}
+\newtheorem{pointt}{}
+
+\def\proof{\noindent{\textbf{Demostraci\'on}}\\}
+\def\endproof{\hfill{\ensuremath\square}}
+\def\refname{Referencias}
+\allowdisplaybreaks
+
+
+
+\usetheme{Boadilla}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+\usefonttheme[onlymath]{serif}
+
+\RequirePackage{fontspec}
+%\setmainfont[Ligatures=TeX]{EB Garamond}
+\setsansfont[Ligatures=TeX]{EBGaramond-VariableFont_wght.ttf}
+%\setseriffont[Ligatures=TeX]{Raleway}
+\newfontfamily\raleway{RalewayThin-wght350.ttf}
+\newfontfamily\ebg{EBGaramond-VariableFont_wght.ttf}
+%\newfontfamily{\semibold}{RalewayThin-Weight600}
+
+\setmonofont{FiraCode-Regular.ttf}
+%\usepackage{mathspec}
+%\setmathrm{FiraCode-Regular.ttf}
+%\setmathfont(Digits,Latin){FiraCode-Regular.ttf}
+%\setmathfont[range=\mathit]{FiraCode-Regular.ttf}
+
+\definecolor{backgroundColour}{RGB}{29, 29, 38}
+\definecolor{textColour}{RGB}{179, 179, 212}
+\definecolor{structureColour}{RGB}{255, 51, 153}
+\definecolor{structure2Colour}{RGB}{204, 102, 255}
+\definecolor{structure3Colour}{RGB}{255, 204, 102}
+\setbeamercolor{normal text}{fg=textColour,bg=backgroundColour}
+\setbeamercolor{structure}{fg=structureColour}
+
+\setbeamercolor{palette primary}{use=structure,bg=structureColour, fg=textColour!50!white}
+\setbeamercolor{palette secondary}{use=structure,bg=structureColour, fg=textColour!50!white}
+\setbeamercolor{palette tertiary}{use=structure,bg=structureColour, fg=textColour!50!white}
+
+\setbeamercolor{author}{fg=structure2Colour}
+\setbeamercolor{subtitle}{fg=structure3Colour}
+\setbeamercolor{alerted text}{fg=structure3Colour}
+\setbeamercolor{highlighted}{fg=structure3Colour}
+
+%\setbeamerfont{normal text}{family=\ebg}
+%\setbeamerfont{structure}{family=\ebg}
+%\setbeamerfont{block body}{family=\ebg}
+\setbeamerfont{title}{size=\fontsize{18}{1},family=\raleway}
+\setbeamerfont{frametitle}{size=\fontsize{18}{28},family=\raleway}
+
+
+
+\title{Videojuegos e Inteligencia Artificial}
+
+\author[Castro-Sotelo, García-Espinoza, Molina-Rebolledo] % (optional)
+{C.A.~Castro-Sotelo \and A.T.~García-Espinoza \and I.~Molina-Rebolledo}
+
+\institute[BUAP] % (optional)
+{
+  Facultad de Ciencias de la Computación\\
+  Benemérita Universidad Autónoma de Puebla
+}
+
+\date[Otoño 2022] % (optional)
+{Inteligencia Artificial, otoño 2022}
+
+
+
+\date{14 de noviembre de 2022}
+\def\code#1{\mintinline[fontsize=\small]{lean}{#1}}
+\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+\frame{\titlepage}
+%Highlighting text
+
+
+\begin{frame}
+\frametitle{Descripción del sistema experto}
+
+\begin{itemize}[<+->]
+\item El sistema experto es un programa que utiliza conocimiento especializado para resolver problemas.
+\item Dada la escasez de agua que han sufrido algunos países en los últimos años, se ha creado un sistema experto que permite a los usuarios saber que recomendaciones de alimentos requieren de menos agua.
+\item Nuestra propuesta es un sistema experto que recomienda alimentos que sean eficientes en el uso del agua.
+\end{itemize}
+\end{frame}
+
+
+
+% End of document
+\begin{frame}
+\frametitle{Final de la presentación}
+
+Muchas gracias por su atención.
+\end{frame}
+
+\end{document}
