@@ -17,6 +17,7 @@
 \usepackage{pdfpages}
 \usepackage{minted}
 \usepackage{multicol}
+\usepackage{filecontents}
 
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
@@ -106,30 +107,110 @@
 
 \date{14 de noviembre de 2022}
 \def\code#1{\mintinline[fontsize=\small]{lean}{#1}}
-\beamerdefaultoverlayspecification{<+->}
+%\beamerdefaultoverlayspecification{<+->}
 
 \begin{document}
 \frame{\titlepage}
 %Highlighting text
 
 
-\begin{frame}
-\frametitle{Descripción del sistema experto}
-
+\begin{frame}[fragile]
+\frametitle{Videojuegos e Inteligencia Artificial}
+\begin{columns}
+\column{0.5\textwidth}
 \begin{itemize}[<+->]
-\item El sistema experto es un programa que utiliza conocimiento especializado para resolver problemas.
-\item Dada la escasez de agua que han sufrido algunos países en los últimos años, se ha creado un sistema experto que permite a los usuarios saber que recomendaciones de alimentos requieren de menos agua.
-\item Nuestra propuesta es un sistema experto que recomienda alimentos que sean eficientes en el uso del agua.
+\item Cuando uno piensa en la inteligencia artificial en los videojuegos
+  comúnmente se imagina la simulación de comportamientos de los personajes no
+  manejados por el jugador.
+\item La mayoría de videojuegos se trabajan con inteligencia artificial que
+  permite que los personajes generados sean capaces de reaccionar según las
+  circunstancias.
+\end{itemize}
+\column{0.5\textwidth}
+\begin{center}
+  \includegraphics[width=0.4\textwidth]{./images/crash.jpg}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Videojuegos e Inteligencia Artificial}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}[<+->]
+\item La inteligencia artificial también permite determinar el camino más corto
+  que debe recorrer un personaje para ir entre el punto A y B, indica si está
+  en peligro para huir o curarse aplicando algoritmos, entre otras
+  aplicaciones.
+\end{itemize}
+\column{0.5\textwidth}
+\begin{center}
+  \includegraphics[width=0.4\textwidth]{./images/ai.jpeg}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Historia}
+\begin{itemize}[<+->]
+\item Fue los años 50 donde los primeros sistemas de inteligencia artificial se
+  aplicaron a juegos de mesa: damas (Arthur Samuel) y ajedrez (Claude Shannon).
+\item Para los años 60 se desarrollaron juegos como el Pong o Spacewar! basados
+  en la lógica. 
+\item En los 70 surgieron juegos de 1 jugador contra enemigos que se movían
+  mediante patrones almacenados. 
+\item En esta misma década, llegó Space Invaders (1978), el cual añadió
+  dificultad creciente y respondía a las acciones del jugador.
+\item En 1980, Pac-Man incorporó algoritmos de búsqueda en laberintos. 
+\item Llegando a los años 90, surgió Dragon Warrior, el primer RPG que permitía
+  variar las rutinas de la IA de los enemigos durante las batallas.
+  \item Fue en esta década que se produjo un boom de nuevos géneros y nuevas
+  técnicas de IA: máquinas de estados finitos, redes neuronales, computación
+  evolutiva, lógica difusa, etc. Aquí tenemos a Battlecruiser 3000AD (1996)
+  que incorpora redes neuronales.
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\begin{center}
+La meta de la investigación en inteligencia artificial es inventar una
+verdadera inteligencia artificial. En orden para construir una inteligencia
+artificial completa necesitamos construir un sistema que tome acciones en un
+tipo de ambiente.
+\end{center}
+\end{frame}
 
+\begin{frame}
+\begin{center}
+Video.
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{En la práctica...}
+\begin{itemize}[<+->]
+\item Una de las ideas más obvias para llevar esto a cabo sería incorporar una inteligencia artificial en robots.
+\item La práctica, sin embargo, nos ha mostrado que incluso las tareas más mundanas son difíciles de realizar por robots. 
+\item Trabajar con robots claramente tiene sus desventajas: son caros y lentos.
+\item Un robot requeriría de mucho tiempo de entrenamiento y el desarrollo de pistas que prueben y desafíen el sistema en su toma de decisiones.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+Es por esto que tomaremos la perspectiva de los videojuegos como pruebas de rendimiento para las inteligencias artificiales.
+\end{center}
+\end{frame}
 
 % End of document
 \begin{frame}
 \frametitle{Final de la presentación}
 
 Muchas gracias por su atención.
+\end{frame}
+
+\begin{frame}
+\frametitle{Referencias}
 \end{frame}
 
 \end{document}
